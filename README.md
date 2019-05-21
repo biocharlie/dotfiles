@@ -1,2 +1,10 @@
 # dotfiles
-dotfiles for Manjaro i3
+dotfiles for for my Manjaro i3 system
+
+# For:
+i3-gaps
+i3status
+neofetch
+bashrc
+nano
+Xresources
