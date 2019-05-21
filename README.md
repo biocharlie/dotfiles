@@ -1,7 +1,7 @@
 # dotfiles
-dotfiles for for my Manjaro i3 system
+dotfiles of my Manjaro i3 system
 
-# For:
+# for:
 i3-gaps
 i3status
 neofetch
