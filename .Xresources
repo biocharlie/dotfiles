@@ -32,7 +32,8 @@ XTerm*selectToClipboard: true
 
 !! green dark/light
 *color2:                          #7E807E
-*color10:                         #8D8F8D
+/* *color10:                         #8D8F8D*/
+*color10:                         #16a085 
 
 !! yellow dark/light
 *color3:                          #f7ca88
