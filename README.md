@@ -7,5 +7,6 @@ i3status
 neofetch
 bashrc
 nano
+vimrc
 Xresources
 ... and more in the future
