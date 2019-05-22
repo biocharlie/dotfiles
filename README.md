@@ -8,3 +8,4 @@ neofetch
 bashrc
 nano
 Xresources
+... and more in the future
