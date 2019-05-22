@@ -154,4 +154,4 @@ export EDITOR="nano"
 #More alias
 alias vi="vim"
 alias weather="curl wttr.in"
-alias git-dot="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias dot="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
