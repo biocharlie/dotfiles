@@ -9,4 +9,5 @@ dotfiles of my Manjaro i3 system
 + nano
 + vim
 + Xresources
+
 ... and more in the future
