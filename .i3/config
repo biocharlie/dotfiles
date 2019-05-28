@@ -332,7 +332,7 @@ bar {
 	#mode <dock|hide|invisible>
 	#hidden_state <hide|show>
 	#modifire <Modifier>
-	mode dock
+	mode dock 
 	hidden_state show
 	modifier Mod4 
 
