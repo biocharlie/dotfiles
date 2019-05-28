@@ -143,7 +143,7 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1:
+set $ws1 1:>_
 set $ws2 2:
 set $ws3 3
 set $ws4 4
@@ -284,6 +284,7 @@ exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 #exec --no-startup-id start_conky_maia
+exec --no-startup-id /home/sith/.Conky/start_conky_maia
 #exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -331,8 +332,8 @@ bar {
 	#mode <dock|hide|invisible>
 	#hidden_state <hide|show>
 	#modifire <Modifier>
-	mode hide
-	hidden_state hide
+	mode dock
+	hidden_state show
 	modifier Mod4 
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
