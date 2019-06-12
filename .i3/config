@@ -333,7 +333,7 @@ bar {
 	#hidden_state <hide|show>
 	#modifire <Modifier>
 	mode dock 
-	hidden_state show
+	hidden_state hide
 	modifier Mod4 
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
