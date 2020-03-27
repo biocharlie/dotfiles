@@ -13,7 +13,7 @@ new_float normal
 
 # Hide borders
 hide_edge_borders none
-
+ 
 # change borders
 #bindsym $mod+u border none
 #bindsym $mod+y border pixel 1
