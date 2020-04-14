@@ -1,4 +1,2 @@
 include /usr/share/nano/*.nanorc
 set linenumbers
-
-# moved to .config on 4/13/20
