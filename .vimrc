@@ -1,4 +1,4 @@
-" My vimrc
+" My vimrcc
 
 set nocompatible
 syntax on
