@@ -1,0 +1,34 @@
+# My tumux config file
+
+# split panes using | and -
+bind | split-window -h
+bind - split-window -v
+unbind '"'
+unbind %
+
+# start at 1 (not 0)
+set -g base-index 1
+set -g pane-base-index 1
+set-window-option -g pane-base-index 1
+set-option -g renumber-windows on
+
+# reload config file (change file location to your the tmux.conf you want to use)
+bind r source-file ~/.config/tmux/tmux.conf
+
+# switch panes using Alt-arrow without prefix
+#bind -n M-Left select-pane -L
+#bind -n M-Right select-pane -R
+#bind -n M-Up select-pane -U
+#bind -n M-Down select-pane -D
+
+# Enable mouse control (clickable windows, panes, resizable panes)
+#set -g mouse on
+
+# don't rename windows automatically
+#set-option -g allow-rename off
+
+# status bar
+set -g status-bg 'cyan'
+set -g window-status-style 'bg=yellow'
+set -g window-status-current-style 'bg=red,fg=white'
+set-option -g status-left "Session #S (#{window_index} window) "
