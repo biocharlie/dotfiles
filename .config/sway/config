@@ -34,11 +34,11 @@ workspace 2 output HDMI-A-1
 workspace 3 output DP-1
 
 workspace 1
-exec firefox
+#exec firefox
 
 workspace 3
-exec telegram-desktop
-exec discord
+#exec telegram-desktop
+#exec discord
 
 exec 'sleep 3; swaymsg workspace 1'
 
