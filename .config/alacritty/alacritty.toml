@@ -1,6 +1,0 @@
-import = [
-"~/.config/alacritty/catppuccin-mocha.toml",
-]
-
-[window]
-opacity = 0.9 
