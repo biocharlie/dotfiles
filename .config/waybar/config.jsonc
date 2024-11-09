@@ -90,7 +90,7 @@
         "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
     "mpris": {
-        "format": "{player_icon} {artist} - {title} ",
+        "format": " {player_icon} {artist} - {title} ",
         "format-paused": "{status_icon} <i>{artist} - {title}</i>",
         "tooltip-format": "{dynamic}",
         "dynamic-order": ["artist", "title", "album", "position", "lengt"],
