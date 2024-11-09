@@ -52,6 +52,10 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px #ffffff;
 }
+#mpris:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -3px #ffffff;
+}
 #clock:hover {
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px #ffffff;
@@ -149,15 +153,11 @@ label:focus {
     color: #000000;
 }
 
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
 #mpris {
     background-color: transparent;
     color: #20f5f5
 }
+
 #temperature {
     background-color: transparent; /*#f0932b;*/
 }
