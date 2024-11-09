@@ -2,7 +2,7 @@
 {
     "layer": "top", // Waybar at top layer
     //"position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
+    //"height": 30, // Waybar height (to be removed for auto height)
     //"width": 1280, // Waybar width
     "spacing": 1, // Gaps between modules (4px)
     //Choose the order of the modules
@@ -11,14 +11,14 @@
         "hyprland/window"
     ],
     "modules-center": [
+        "mpris",
         "custom/weather"
     ],
     "modules-right": [
-        "mpris",
-        "tray",
         "temperature",
         "pulseaudio",
         //"network",
+        "tray",
         "clock",
         "custom/power"
     ],
@@ -49,18 +49,19 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%a%b%d %I:%M%p}",
+        "format": "{:%I:%M%p}",
         // "timezone": "America/New_York",
-        "tooltip-format": "<tt><small>{calendar}</small></tt>"
-        //"format-alt": "{:%Y-%m-%d %R}"
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%a %b %d %I:%M%p}"
     },
     "temperature": {
         //"thermal-zone": 2,
         "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
-        "critical-threshold": 80,
+        "critical-threshold": 85,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        //"format-icons": ["", "", ""],
+        "format-icons": ["🌡️", "🌡️", "🌡️"]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -78,13 +79,15 @@
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         //"format-muted": " {format_source}",
-        "format-muted": "{volume}% ",
+        //"format-muted": "{volume}% ",
+        "format-muted": "{volume}% 🔇",
         //"format-source": "{volume}% ",
         //"format-source-muted": "",
         "format-icons": {
             "headphone": "",
             "headset": "",
-            "default": ["", "", ""]
+            "default": ["🔈", "🔉", "🔊"]
+            //"default": ["", "", ""]
         },
         "on-click": "pavucontrol",
         "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
@@ -95,19 +98,17 @@
         "tooltip-format": "{dynamic}",
         "dynamic-order": ["artist", "title", "album", "position", "lengt"],
         "dynamic-importance-order": ["artist", "title", "album", "position", "lengt"],
-        "artist-len": 20,
-        "title-len": 20,
-            "player-icons": {
-	        "default": "▶",
-	        "mpv": "🎵"
-	    },
-	    "status-icons": {
-	        "paused": "⏸"
-	    },
-	    // "ignored-players": ["firefox"]
+        "artist-len": 30,
+        "title-len": 30,
+        "player-icons": {
+	          "default": "▶️"
+	      },
+	      "status-icons": {
+	          "paused": "⏸️"
+	      }
     },
     "custom/power": {
-        "format" : " ⏻ ",
+        "format" : "🔌 ", //⏻
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
@@ -122,6 +123,6 @@
     "custom/weather": {
       "tooltip": false,
       "interval": 3600,
-      "exec": "curl -s https://wttr.in/?format=2&period=60"
+      "exec": "curl -s https://wttr.in/?format=1&period=60"
     }
 }
