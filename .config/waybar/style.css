@@ -52,15 +52,21 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px #ffffff;
 }
+/*
 #mpris:hover {
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px #ffffff;
 }
+*/
 #clock:hover {
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px #ffffff;
 }
 #temperature:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -3px #ffffff;
+}
+#network:hover {
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px #ffffff;
 }
@@ -136,7 +142,7 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: transparent; /*#2980b9;*/
 }
 
 #network.disconnected {
