@@ -1,0 +1,10 @@
+[window]
+
+opacity = 0.8
+blur = false # (macos/kde only)
+
+padding.x = 5
+padding.y = 5
+
+#decorations = "Full" # Full | None | Transparent (macos only) | Buttonless(macos only) | Default: _"Full"_
+#decorations_theme_variant = "Light" # "Dark"
