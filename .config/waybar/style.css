@@ -1,11 +1,13 @@
 * {
-    font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
+    /*font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;*/
+    font-family: 'Noto Sans Mono';
     font-size: 13px;
+    font-weight: bold;
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.3);
+    background-color: rgba(43, 48, 59, 0.5); /*gris oscuro*/
+    border-bottom: 3px solid rgba(100, 114, 125, 0.3); /*gris clarito*/
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -40,7 +42,6 @@ button {
     border: none;
     border-radius: 0;
 }
-
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
@@ -49,29 +50,19 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    /*background-color: rgba(0, 0, 0, 0.2);*/
     box-shadow: inset 0 -3px #ffffff;
 }
-/*
-#mpris:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -3px #ffffff;
-}
-*/
 #clock:hover {
-    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px #ffffff;
 }
 #temperature:hover {
-    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px #ffffff;
 }
 #network:hover {
-    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px #ffffff;
 }
 #custom-power:hover {
-    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px #ffffff;
 }  
 #workspaces button {
@@ -90,28 +81,6 @@ button:hover {
     background-color: #eb4d4b;
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#power-profiles-daemon,
-#mpd {
-    padding: 0 10px;
-    color: #ffffff;
-}
-
-#window,
 #workspaces {
     margin: 0 4px;
 }
@@ -127,7 +96,7 @@ button:hover {
 }
 
 #clock {
-    background-color: transparent; /* #64727D;*/
+    background-color: inherit; /* #64727D;*/
 }
 
 @keyframes blink {
@@ -142,7 +111,7 @@ label:focus {
 }
 
 #network {
-    background-color: transparent; /*#2980b9;*/
+    background-color: inherit; /*#2980b9;*/
 }
 
 #network.disconnected {
@@ -150,7 +119,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: transparent;
+    background-color: inherit;
     color: #ffffff;
 }
 
@@ -160,12 +129,13 @@ label:focus {
 }
 
 #mpris {
-    background-color: transparent;
-    color: #20f5f5
+    background-color: inherit;
+    color: #20f5f5;
+    font-weight: normal;
 }
 
 #temperature {
-    background-color: transparent; /*#f0932b;*/
+    background-color: inherit;
 }
 
 #temperature.critical {
@@ -173,7 +143,7 @@ label:focus {
 }
 
 #tray {
-    background-color: transparent;
+    background-color: inherit;
 }
 
 #tray > .passive {

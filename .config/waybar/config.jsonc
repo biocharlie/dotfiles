@@ -4,7 +4,7 @@
     //"position": "bottom", // Waybar position (top|bottom|left|right)
     //"height": 30, // Waybar height (to be removed for auto height)
     //"width": 1280, // Waybar width
-    "spacing": 1, // Gaps between modules (4px)
+    "spacing": 15, // Gaps between modules (4px)
     //Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
@@ -23,10 +23,10 @@
         "custom/power"
     ],
     // Modules configuration
-    //"hyprland/workspaces": {
-    //    "disable-scroll": true,
-    //    "all-outputs": true,
-    //    "warp-on-scroll": false,
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
     //    "format": "{name}: {icon}",
     //    "format-icons": {
     //        "1": "",
@@ -34,14 +34,14 @@
     //        "3": "",
     //        "4": "",
     //        "5": "",
-    //        "urgent": "",
-    //        "focused": "",
-    //        "default": ""
+            "urgent": "",
+            "focused": "",
+            "default": ""
     //    }
-    //},
+    },
+    
     "hyprland/window": {
-        //"format": "{}",
-        "format": "<span font='9' rise='-4444'>{}</span>", // so it looks more centered
+        "format": "{}",
         "icon": true
     },
     "tray": {
@@ -60,6 +60,7 @@
         "critical-threshold": 85,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
+        "tooltip": false,
         "format-icons": ["", "", ""],
         //"format-icons": ["🌡️", "🌡️", "🌡️"]
     },
@@ -88,8 +89,8 @@
             //"default": ["🔈", "🔉", "🔊"]
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol",
-        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "pavucontrol"
     },
     "mpris": {
         "format": " {player_icon} {artist} - {title} ",
