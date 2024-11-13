@@ -23,10 +23,10 @@
         "custom/power"
     ],
     // Modules configuration
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "warp-on-scroll": false,
+    //"hyprland/workspaces": {
+    //    "disable-scroll": true,
+    //    "all-outputs": true,
+    //    "warp-on-scroll": false,
     //    "format": "{name}: {icon}",
     //    "format-icons": {
     //        "1": "",
@@ -34,18 +34,17 @@
     //        "3": "",
     //        "4": "",
     //        "5": "",
-            "urgent": "",
-            "focused": "",
-            "default": ""
+    //        "urgent": "",
+    //        "focused": "",
+    //        "default": ""
     //    }
-    },
+    //},
     
     "hyprland/window": {
         "format": "{}",
         "icon": true
     },
     "tray": {
-        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
@@ -58,17 +57,14 @@
         //"thermal-zone": 2,
         "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
         "critical-threshold": 85,
-        // "format-critical": "{temperatureC}°C {icon}",
+        "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "tooltip": false,
         "format-icons": ["", "", ""],
-        //"format-icons": ["🌡️", "🌡️", "🌡️"]
     },
     "network": {
-        //"format-wifi": "{essid} ({signalStrength}%) ",
         "format-wifi": "{signalStrength}% ",
         "format-ethernet": "{ipaddr}/{cidr} ",
-        //"tooltip-format": "{ifname} via {gwaddr} ",
         "tooltip-format": "{essid} ({signalStrength}%) | IP: {ipaddr}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
@@ -86,7 +82,6 @@
         "format-icons": {
             "headphone": "",
             "headset": "",
-            //"default": ["🔈", "🔉", "🔊"]
             "default": ["", "", ""]
         },
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
@@ -109,14 +104,13 @@
     },
     "custom/power": {
         "format" : "⏻ ",
-        //"format" : "🔌 ",
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
 			"shutdown": "shutdown",
 			"reboot": "reboot",
-      "logout": "hyprctl dispatch exit",
+			"logout": "hyprctl dispatch exit",
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		  }
