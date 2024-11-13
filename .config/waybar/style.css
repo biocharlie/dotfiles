@@ -10,7 +10,7 @@ window#waybar {
     border-bottom: 3px solid rgba(100, 114, 125, 0.3); /*gris clarito*/
     color: #ffffff;
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
@@ -33,6 +33,15 @@ window#waybar.termite {
 window#waybar.chromium {
     background-color: #000000;
     border: none;
+}
+
+tooltip {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+  font-weight: normal;
 }
 
 button {
@@ -97,13 +106,6 @@ button:hover {
 
 #clock {
     background-color: inherit; /* #64727D;*/
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
 }
 
 label:focus {
