@@ -118,6 +118,6 @@
     "custom/weather": {
       "tooltip": false,
       "interval": 3600,
-      "exec": "curl -s https://wttr.in/?format=1&period=60"
+      "exec": "curl -s https://wttr.in/?format=2&period=60"
     }
 }
