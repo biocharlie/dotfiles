@@ -111,8 +111,9 @@
 			"shutdown": "shutdown",
 			"reboot": "reboot",
 			"logout": "hyprctl dispatch exit",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
+			"lock": "hyprlock",
+			//"suspend": "systemctl suspend",
+			//"hibernate": "systemctl hibernate"
 		  }
     },
     "custom/weather": {
