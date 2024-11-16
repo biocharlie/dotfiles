@@ -11,7 +11,7 @@
 window#waybar {
     /*background-color: rgba(43, 48, 59, 0.5);*/  /*gris oscuro*/
     /*border-bottom: 3px solid rgba(100, 114, 125, 0.3);*/  /*gris clarito*/
-    transition-property: background-color;
+        transition-property: background-color;
 }
 
 window#waybar.hidden {
@@ -116,7 +116,7 @@ button:hover {
 #clock,
 #custom-power {
     color: inherit;
-    padding: 0 5 0 5px;
+    padding: 0 3px 0 3px;
     margin: 0px; 
     border-radius: 5px;
 }
@@ -126,7 +126,8 @@ button:hover {
 #pulseaudio:hover,
 #clock:hover,
 #custom-power:hover {
-    background-color: rgba(51, 204, 255, 0.7);
+    /*background-color: rgba(51, 204, 255, 0.7);*/
+    box-shadow: inset 10px 5px 10px 5px rgba(51, 204, 255,0.5);
 }
 
 #temperature.critical {

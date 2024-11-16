@@ -55,7 +55,7 @@
     "clock": {
         "format": "{:%I:%M%p}",
         // "timezone": "America/New_York",
-        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
         "format-alt": "{:%a %b %d %I:%M%p}"
     },
     "temperature": {
