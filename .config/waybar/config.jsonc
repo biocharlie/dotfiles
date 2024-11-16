@@ -41,8 +41,13 @@
     //},
     
     "hyprland/window": {
-        "format": "{}",
-        "icon": true
+        "format": "{title}",
+        "rewrite": {
+            "(.*) Mozilla Firefox": "Firefox",
+            "(.*) Text Editor": "Text Editor",
+        },
+        "icon": true,
+        "icon-size": 20
     },
     "tray": {
         "spacing": 10
@@ -103,7 +108,7 @@
 	      }
     },
     "custom/power": {
-        "format" : "⏻ ",
+        "format" : " ⏻ ",
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder

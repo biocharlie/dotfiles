@@ -3,28 +3,28 @@
     font-family: 'Noto Sans Mono';
     font-size: 13px;
     font-weight: bold;
-}
-
-window#waybar {
-    background-color: rgba(43, 48, 59, 0.5); /*gris oscuro*/
-    border-bottom: 3px solid rgba(100, 114, 125, 0.3); /*gris clarito*/
+    background: transparent;
     color: #ffffff;
-    transition-property: background-color;
     transition-duration: 0.5s;
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
+window#waybar {
+    /*background-color: rgba(43, 48, 59, 0.5);*/  /*gris oscuro*/
+    /*border-bottom: 3px solid rgba(100, 114, 125, 0.3);*/  /*gris clarito*/
+    transition-property: background-color;
 }
 
-/*
+window#waybar.hidden {
+    opacity: 0.9;
+}
+
 window#waybar.empty {
     background-color: transparent;
 }
+/*
 window#waybar.solo {
     background-color: #FFFFFF;
 }
-*/
 
 window#waybar.termite {
     background-color: #3F3F3F;
@@ -34,6 +34,7 @@ window#waybar.chromium {
     background-color: #000000;
     border: none;
 }
+*/
 
 label:focus {
     background-color: #000000;
@@ -70,6 +71,20 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
@@ -86,62 +101,7 @@ button:hover {
     background-color: #eb4d4b;
 }
 
-#workspaces {
-    margin: 0 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
-/* modules */
-#temperature,
-#network,
-#pulseaudio,
-#tray,
-#clock,
-#custom-power,
-
-#clock {
-    background-color: inherit; /* #64727D;*/
-}
-
-#clock:hover {
-    box-shadow: inset 0 -3px #ffffff;
-}
-
-#network {
-    background-color: inherit; /*#2980b9;*/
-}
-
-#network.disconnected {
-    background-color: #f53c3c;
-}
-
-#network:hover {
-    box-shadow: inset 0 -3px #ffffff;
-}
-
-#pulseaudio {
-    background-color: inherit;
-    color: #ffffff;
-}
-
-#pulseaudio.muted {
-    background-color: #64727D;
-    color: #000000;
-}
-
-#pulseaudio:hover {
-    /*background-color: rgba(0, 0, 0, 0.2);*/
-    box-shadow: inset 0 -3px #ffffff;
-}
+/* ### MODULES ### */
 
 #mpris {
     background-color: inherit;
@@ -149,20 +109,37 @@ button:hover {
     font-weight: normal;
 }
 
-#temperature {
-    background-color: inherit;
+#temperature,
+#network,
+#pulseaudio,
+#tray,
+#clock,
+#custom-power {
+    color: inherit;
+    padding: 0 5 0 5px;
+    margin: 0px; 
+    border-radius: 5px;
+}
+
+#temperature:hover,
+#network:hover,
+#pulseaudio:hover,
+#clock:hover,
+#custom-power:hover {
+    background-color: rgba(51, 204, 255, 0.7);
 }
 
 #temperature.critical {
     background-color: #eb4d4b;
 }
 
-#temperature:hover {
-    box-shadow: inset 0 -3px #ffffff;
+#network.disconnected {
+    background-color: #f53c3c;
 }
 
-#tray {
-    background-color: inherit;
+#pulseaudio.muted {
+    background-color: #64727D;
+    color: #000000;
 }
 
 #tray > .passive {
@@ -173,17 +150,6 @@ button:hover {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
-
-/*
-#tray menu{
-    background-color: rgba(40,40,40,0.7);
-    color: #B5E8E0;
-}
-*/
-#custom-power:hover {
-    box-shadow: inset 0 -3px #ffffff;
-}
-
 
 /*##########################################*/
 
