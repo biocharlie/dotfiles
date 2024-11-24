@@ -10,7 +10,7 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # Neofetch
-fastfetch
+fastfetch --config examples/9
 
 # Aliases
 alias cp="cp -i"                          # confirm before overwriting something
