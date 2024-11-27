@@ -3,15 +3,13 @@
     font-family: 'Noto Sans Mono';
     font-size: 13px;
     font-weight: bold;
-    background: transparent;
     color: #ffffff;
     transition-duration: 0.5s;
 }
 
 window#waybar {
-    /*background-color: rgba(43, 48, 59, 0.5);*/  /*gris oscuro*/
-    /*border-bottom: 3px solid rgba(100, 114, 125, 0.3);*/  /*gris clarito*/
-        transition-property: background-color;
+    background-color: inherit;
+    transition-property: background-color;
 }
 
 window#waybar.hidden {
@@ -126,8 +124,7 @@ button:hover {
 #pulseaudio:hover,
 #clock:hover,
 #custom-power:hover {
-    /*background-color: rgba(51, 204, 255, 0.7);*/
-    box-shadow: inset 10px 5px 10px 5px rgba(51, 204, 255,0.5);
+    background-color: rgba(51, 204, 255, 0.4);
 }
 
 #temperature.critical {
